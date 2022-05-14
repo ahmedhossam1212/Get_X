@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:get_x/get_builder/view/home.dart';
+import 'package:get_x/getX/view/Home.dart';
 
 
 
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const GetMaterialApp( debugShowCheckedModeBanner: false,
-      home: Counter(),
+      home: Home(),
     );
   }
 }
