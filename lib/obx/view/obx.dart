@@ -1,20 +1,23 @@
+
+
 import 'package:flutter/material.dart';
-import 'package:get/get_state_manager/src/rx_flutter/rx_getx_widget.dart';
-import '../controller/controller.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_instance/src/extension_instance.dart';
+import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
+import 'package:get_x/getX/controller/controller.dart';
 
-class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
-
+class ObxScreen extends StatelessWidget {
+   ObxScreen ({Key? key}) : super(key: key);
+   HomeController controller = Get.put(HomeController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       appBar: AppBar(
-        title: const Text("GetX"),
+        title: const Text("Obx"),
       ),
       body: Center(
-          child: GetX<HomeController>(
-            init: HomeController(),
-            builder: (controller) => Row( mainAxisAlignment: MainAxisAlignment.center,
+          child: Obx(() => Row( mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 TextButton(onPressed: (){
                   controller.increment();
