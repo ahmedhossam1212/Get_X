@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:get_x/getX/view/Home.dart';
+import 'package:get_x/obx/view/obx.dart';
+
 
 
 
@@ -14,8 +15,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp( debugShowCheckedModeBanner: false,
-      home: Home(),
+    return  GetMaterialApp( debugShowCheckedModeBanner: false,
+      home: ObxScreen() ,
     );
   }
 }
