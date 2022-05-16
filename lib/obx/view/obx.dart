@@ -13,7 +13,7 @@ class ObxScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       
-      appBar: AppBar(
+      appBar: AppBar( backgroundColor: Color.fromARGB(255, 34, 53, 68),
         title: const Text("Obx"),
       ),
       body: Center(
@@ -25,7 +25,7 @@ class ObxScreen extends StatelessWidget {
                     child:  Text("+",
                       style: Theme.of(context).textTheme.bodyText2?.copyWith(
                         fontSize: 30,
-                        color: Colors.blue,
+                        color: Color.fromARGB(255, 20, 29, 36),
                       ) ,)),
                 Text("${controller.counter.value}"),
                 TextButton(onPressed: (){
@@ -34,7 +34,7 @@ class ObxScreen extends StatelessWidget {
                     child:  Text("-",
                       style: Theme.of(context).textTheme.bodyText2?.copyWith(
                         fontSize: 30,
-                        color: Colors.blue,
+                        color: Color.fromARGB(255, 26, 37, 46),
                       ) ,)),
               ],
             ), )
